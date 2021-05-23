@@ -1,0 +1,30 @@
+#make to ruselt 
+sub1 = "Bangla"
+sub2 = "English"
+sub3 = "Mathematics"
+ban = int(input("Enter marks in {} :".format(sub1)))
+eng = int(input("Enter marks in {} :".format(sub2)))
+math = int(input("Enter marks in {} :".format(sub3)))
+
+def check_marks(sub, marks):
+    if marks < 0:
+        print("{}\tInvalid".format(sub))
+    elif marks < 33:
+        print("{}\tF".format(sub))
+    elif marks < 40:
+        print("{}\tD".format(sub))
+    elif marks < 50:
+        print("{}\tC".format(sub))
+    elif marks < 60:
+        print("{}\tB".format(sub))
+    elif marks < 70:
+        print("{}\tA-".format(sub))
+    elif marks < 80:
+        print("{}\tA".format(sub))
+    elif marks <= 100:
+        print("{}\tA+".format(sub))
+    else:
+        print("{}\tInvalid".format(sub))
+check_marks(sub1, ban)
+check_marks(sub2, eng)
+check_marks(sub3, math)
